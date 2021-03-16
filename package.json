@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/hector-gm/MERN_Google_Books_Search/issues"
   },
-  "homepage": "https://github.com/hector-gm/MERN_Google_Books_Search#readme"
+  "homepage": "https://github.com/hector-gm/MERN_Google_Books_Search#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
