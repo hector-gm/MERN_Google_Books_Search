@@ -1,10 +1,9 @@
 const router = require("express").Router();
 const {saveNewBook, getSavedBooks, deleteBook} = require("../controllers/controller");
 
-router
-  .route("/:id")
-  .get("/books",getSavedBooks)
-  .put("/books", saveNewBook)
-  .delete("/books/:id", deleteBook);
+router.route("/:id");
+router.get("/books",getSavedBooks);
+router.put("/books", saveNewBook);
+router.delete("/books/:id", deleteBook);
 
 module.exports = router;
