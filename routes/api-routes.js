@@ -5,7 +5,7 @@ require("dotenv").config();
 
 router.get("/search/:type/:title", (req,res) => {
     return axios
-        .get(`https://www.googleapis.com/books/v1/volumes?q=in${req.params.type}:${req.params.title}&key=${process.env.REACT_APP_API_KEY_GOOGLE_BOOKS}
+        .get(`https://www.googleapis.com/books/v1/volumes?q=in${req.params.type}:${req.params.title}&key=AIzaSyBtB-wrKLz-tULgs_Wxo-rBRFIQufFP1Ls
         `)
         .then((response) => res.json(response.data))
         .catch((err) => res.send(err));
