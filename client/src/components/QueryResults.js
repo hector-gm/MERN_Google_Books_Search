@@ -66,3 +66,5 @@ const QueryResults = (props) => {
         </div>
     );
 };
+
+export default QueryResults;
