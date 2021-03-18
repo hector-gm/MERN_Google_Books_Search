@@ -3,7 +3,7 @@ import React from "react";
 const QueryResults = (props) => {
     return (
         <div className="container">
-            <h3>Your Query's Results</h3>
+            <h3>Your Query's Results Will Be Displayed Below:</h3>
             <div className="text-left mt-5">
                 {props.results.map((element, index) => (
                     <div key={index} className="my-4 row">
@@ -37,8 +37,9 @@ const QueryResults = (props) => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                More info
+                                Link to More info
                             </a>
+                            <br />
                             <button
                             className="btn btn-primary mx-3"
                             onClick={() => {
@@ -57,7 +58,7 @@ const QueryResults = (props) => {
                                 });
                             }}
                             >
-                            Save to list
+                            Save to your list
                         </button>
                     </div>
                 </div>
